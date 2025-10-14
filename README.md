@@ -1,5 +1,5 @@
 # React In-class Exam, October 2025
-
+Robert Finn, 20063897
 ## 1. Setup instructions
 
 This repository contains the starting code for a lab-based React assessment. 
