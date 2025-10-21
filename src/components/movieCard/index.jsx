@@ -15,6 +15,10 @@ import IconButton from "@mui/material/IconButton";
 import Grid from "@mui/material/Grid";
 import Avatar from '@mui/material/Avatar';
 import img from '../../images/film-poster-placeholder.png';
+import { format } from 'date-fns'
+import dayjs from "dayjs";
+
+
 
 export default function MovieCard({ movie, action }) { 
 
@@ -31,6 +35,7 @@ export default function MovieCard({ movie, action }) {
     addToFavorites(movie);
   };
 
+  const date = dayjs(movie.released_date).format('D MMM YYYY');
 
   return (
     <Card>
@@ -62,8 +67,8 @@ export default function MovieCard({ movie, action }) {
           <Grid size={{ xs: 6 }}>
             <Typography variant="h6" component="p">
               <CalendarIcon fontSize="small" />
-              {movie.release_date}
-            </Typography>
+              {date}
+                </Typography>
           </Grid>
           <Grid size={{ xs: 6 }}>
             <Typography variant="h6" component="p">
