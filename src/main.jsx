@@ -37,7 +37,7 @@ const App = () => {
             <Route path="/movies/:id" element={<MoviePage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={<Navigate to="/" />} />
-            <Route path="/movies/trending/today" element={<TrendingMoviesPage />} />
+            <Route path="/movies/trending/this-week" element={<TrendingMoviesPage />} />
           </Routes>
         </MoviesContextProvider>
       </BrowserRouter>
